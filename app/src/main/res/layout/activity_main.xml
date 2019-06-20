@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Activity_Main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@+id/divide"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1">
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/colorE5E5E5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:checkedButton="@+id/order_process">
+
+                <RadioGroup
+                    android:id="@+id/activity_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y35"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/activity_radiobut_home"
+                        style="@style/main_tab_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/y2"
+                        android:layout_weight="1.0"
+                        android:checked="true"
+                        android:drawableTop="@drawable/select_home"
+                        android:gravity="center"
+                        android:text="首页"
+                        android:textColor="@drawable/select_home_text"
+                        android:textSize="@dimen/x10" />
+
+                    <RadioButton
+                        android:id="@+id/activity_radiobut_club"
+                        style="@style/main_tab_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/x27"
+                        android:layout_marginTop="@dimen/y2"
+                        android:layout_weight="1.0"
+                        android:drawableTop="@drawable/select_find_teacher"
+                        android:gravity="center"
+                        android:text="俱乐部"
+                        android:textColor="@drawable/select_home_text"
+                        android:textSize="@dimen/x10" />
+
+                    <RadioButton
+                        android:id="@+id/activity_radiobut_points_mall"
+                        style="@style/main_tab_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x27"
+                        android:layout_marginTop="@dimen/y2"
+                        android:layout_weight="1.0"
+                        android:drawableTop="@drawable/select_message"
+                        android:gravity="center"
+                        android:text="积分商城"
+                        android:textColor="@drawable/select_home_text"
+                        android:textSize="@dimen/x10" />
+
+                    <RadioButton
+                        android:id="@+id/activity_radiobut_mine"
+                        style="@style/main_tab_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/y2"
+                        android:layout_weight="1.0"
+                        android:checked="false"
+                        android:drawableTop="@drawable/select_mine"
+                        android:gravity="center"
+                        android:text="我的"
+                        android:textColor="@drawable/select_home_text"
+                        android:textSize="@dimen/x10" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_message"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/shape_red_circle"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y35"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/y15"
+                android:src="@drawable/ic_botton" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

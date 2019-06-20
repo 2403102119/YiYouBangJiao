@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_mine_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_MineData">
+
+    <FrameLayout
+        android:id="@+id/fl_mine_data_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y97"
+            android:background="@drawable/ic_mine_data" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_top_individual" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="@dimen/x72"
+                android:layout_height="@dimen/y50"
+                android:layout_marginTop="@dimen/y32"
+                android:background="@drawable/ic_user" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y29"
+        android:layout_below="@id/fl_mine_data_top"
+        android:layout_marginTop="@dimen/y22"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/x36"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x23"
+            android:text="昵称"
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/x15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x9"
+            android:text="："
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/x15" />
+
+        <com.tangchaoke.yiyoubangjiao.view.ContainsEmojiEditText
+            android:id="@+id/edit_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="起一个有个性的昵称"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/x12" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_determine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y38"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y49"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:background="@drawable/select_blue_gradient_fillet_10"
+        android:text="确 定"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

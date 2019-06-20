@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_registered_bg"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_RegisteraNext">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top_individual" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top">
+
+        <ImageView
+            android:id="@+id/tv_registered_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y21"
+            android:background="@drawable/ic_registered_py" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_registered_top"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:layout_marginTop="@dimen/y15"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/x15" />
+
+        <View
+            android:id="@+id/view_line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/edit_password"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:layout_marginTop="@dimen/y9"
+            android:background="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edit_promo_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line3"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:layout_marginTop="@dimen/y15"
+            android:background="@null"
+            android:hint="请输入优惠码(选填)"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/x15"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_school_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line3"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:layout_marginTop="@dimen/y15"
+            android:background="@null"
+            android:hint="学校识别码"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/x15" />
+
+        <View
+            android:id="@+id/view_line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/edit_school_code"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:layout_marginTop="@dimen/y9"
+            android:background="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edit_club_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line4"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:layout_marginTop="@dimen/y15"
+            android:background="@null"
+            android:hint="棋类机构识别码"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/x15" />
+
+        <View
+            android:id="@+id/view_line5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/edit_club_code"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:layout_marginTop="@dimen/y9"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line5"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:layout_marginTop="@dimen/y10"
+            android:text="( 如无学校识别码、机构识别码 点击注册则以游客身份注册 )"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/x10" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/but_registered"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:background="@drawable/select_blue_gradient_fillet_10"
+            android:text="注 册"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/x15" />
+
+        <LinearLayout
+            android:id="@+id/ll_registra_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/but_registered"
+            android:layout_marginBottom="@dimen/y10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击注册即表示您同意"
+                android:textColor="@color/colorDADADA"
+                android:textSize="@dimen/x12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《隐私条例和服务条款》"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/x12" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

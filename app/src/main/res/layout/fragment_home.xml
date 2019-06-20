@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.fragment.Fragment_Home">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/top_search" />
+
+    <com.tangchaoke.yiyoubangjiao.view.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_top">
+
+        <include layout="@layout/pullto_refresh_head" />
+
+        <com.tangchaoke.yiyoubangjiao.view.ObservableScrollView
+            android:id="@+id/home_observable_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                    <com.stx.xhb.xbanner.XBanner
+                        android:id="@+id/xbanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y108"
+                        android:background="@drawable/ic_banner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/y18"
+                        android:layout_marginTop="@dimen/y18"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_home_online_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/y57"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:layout_marginRight="@dimen/x20"
+                            android:background="@drawable/ic_test" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/y30"
+                        android:layout_height="@dimen/y70"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_home_other"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_grid_other" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_home_find_teach"
+                        android:layout_width="@dimen/y56"
+                        android:layout_height="@dimen/y70"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_home_find_teach"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_grid_find_teach" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_home_clup_style"
+                        android:layout_width="@dimen/y56"
+                        android:layout_height="@dimen/y70"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_home_clup_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_grid_clup" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_home_activity_center"
+                        android:layout_width="@dimen/y56"
+                        android:layout_height="@dimen/y70"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_home_activity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_home_grid_activity" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x20"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_platform_special_consultant" />
+
+                        <TextView
+                            android:id="@+id/tv_special_consultant_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginBottom="@dimen/y4"
+                            android:text="更多 + "
+                            android:textColor="@color/colorE0C8A2"
+                            android:textSize="@dimen/x13" />
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/img_special_consultant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x20"
+                        android:background="@drawable/ic_special_consultant" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginTop="@dimen/y20"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x20"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_home_news" />
+
+                        <TextView
+                            android:id="@+id/tv_news_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginBottom="@dimen/y5"
+                            android:text="更多 + "
+                            android:textColor="@color/colorE0C8A2"
+                            android:textSize="@dimen/x13" />
+
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_home_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/x28"
+                            android:layout_marginRight="@dimen/x28"></android.support.v7.widget.RecyclerView>
+
+                        <LinearLayout
+                            android:id="@+id/ll_no_problem"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/y13"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/y13"
+                                android:background="@drawable/ic_null" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/y13"
+                                android:text="未探测到相关数据"
+                                android:textColor="@color/color999999"
+                                android:textSize="@dimen/x15" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.tangchaoke.yiyoubangjiao.view.ObservableScrollView>
+
+        <include
+            layout="@layout/pullto_load_more"
+            android:visibility="gone" />
+
+    </com.tangchaoke.yiyoubangjiao.view.PullToRefreshLayout>
+
+</RelativeLayout>

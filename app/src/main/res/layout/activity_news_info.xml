@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_NewsInfo">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/y15"
+                android:text="新闻标题"
+                android:textColor="@color/color171f24"
+                android:textSize="@dimen/x28" />
+
+            <ImageView
+                android:id="@+id/img_path"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y125"
+                android:layout_below="@id/tv_title"
+                android:layout_marginBottom="@dimen/y15"
+                android:layout_marginLeft="@dimen/y15"
+                android:layout_marginRight="@dimen/y15"
+                android:background="@drawable/ic_banner" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_path"
+                android:layout_marginLeft="@dimen/y15"
+                android:layout_marginRight="@dimen/y15"
+                android:text="This is a must-read for understanding the tech industry. We’ve distilled famous investor Mary Meeker’s annual Internet."
+                android:textColor="@color/color171f24"
+                android:textSize="@dimen/x20" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

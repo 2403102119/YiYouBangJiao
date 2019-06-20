@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/y13"
+        android:layout_marginLeft="@dimen/x18"
+        android:layout_marginRight="@dimen/x18"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_fillet_5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_wx_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y7"
+                android:layout_marginTop="@dimen/y7"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/y25"
+                    android:background="@drawable/wechat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y7"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="微信好友"
+                    android:textColor="@color/color333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_wx_pyq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y7"
+                android:layout_marginTop="@dimen/y7"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/y25"
+                    android:background="@drawable/ic_wx_pey" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y7"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="微信朋友圈"
+                    android:textColor="@color/color333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_avatar_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y38"
+            android:layout_marginTop="@dimen/y7"
+            android:background="@drawable/shape_white_fillet_5"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color333333"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

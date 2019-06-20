@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF6F9FA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/y13"
+        android:paddingTop="@dimen/y13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_drop_down"
+                android:layout_width="@dimen/x23"
+                android:layout_height="@dimen/y19"
+                android:layout_marginRight="@dimen/x5"
+                android:background="@drawable/ic_drop_down" />
+
+            <ImageView
+                android:id="@+id/img_drop_down_load"
+                android:layout_width="@dimen/x27"
+                android:layout_height="@dimen/y19"
+                android:layout_marginRight="@dimen/x5"
+                android:background="@drawable/ic_load"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_drop_down_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5"
+                android:text="@string/pull_to_refresh"
+                android:textColor="@color/color999999"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_drop_down_result"
+                android:layout_width="@dimen/x23"
+                android:layout_height="@dimen/y16"
+                android:layout_marginLeft="@dimen/x7"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

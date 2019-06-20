@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_Settings">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_push"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:text="关闭推送"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+            <CheckBox
+                android:id="@+id/shopMessage_switchId"
+                android:layout_width="@dimen/x33"
+                android:layout_height="@dimen/y14"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x18"
+                android:background="@drawable/selector_catch_btn"
+                android:button="@null"
+                android:checked="true" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:id="@+id/ll_updated"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:text="版本更新"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+            <TextView
+                android:id="@+id/tv_new"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y16"
+                android:layout_marginRight="@dimen/x18"
+                android:background="@drawable/shape_red_filled_10"
+                android:gravity="center"
+                android:text="new"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/x15"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_new"
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/y8"
+                android:layout_marginRight="@dimen/x14"
+                android:src="@drawable/ic_item_right_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:id="@+id/ll_push_range"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:text="查看推送题目范围"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/y8"
+                android:layout_marginRight="@dimen/x14"
+                android:src="@drawable/ic_item_right_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_push_range"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:id="@+id/ll_binding_school"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:text="成为学校教师"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_binding_school"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:id="@+id/ll_clear_caching"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:text="清除缓存"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:id="@+id/ll_login_password_modification"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:text="登录密码修改"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/y8"
+                android:layout_marginRight="@dimen/x14"
+                android:src="@drawable/ic_item_right_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:id="@+id/ll_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:text="意见与反馈"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/y8"
+                android:layout_marginRight="@dimen/x14"
+                android:src="@drawable/ic_item_right_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:id="@+id/ll_mine_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:text="关于我们"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/y8"
+                android:layout_marginRight="@dimen/x14"
+                android:src="@drawable/ic_item_right_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y38"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y49"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:background="@drawable/select_blue_gradient_fillet_10"
+        android:text="退出当前账号"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

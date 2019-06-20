@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_SelectSubject">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_select_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x14"
+            android:layout_marginTop="@dimen/y10"
+            android:text="选择年级："
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/x15" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_select_subject_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginRight="@dimen/x14"
+            android:layout_marginTop="@dimen/y10"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_select_grade"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x14"
+            android:layout_marginTop="@dimen/y10"
+            android:text="选择学科："
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/x15" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_select_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginRight="@dimen/x14"
+            android:layout_marginTop="@dimen/y10"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_chess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_select_subject"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x14"
+            android:layout_marginTop="@dimen/y10"
+            android:text="选择棋类："
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/x15" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_select_chess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginRight="@dimen/x14"
+            android:layout_marginTop="@dimen/y10"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

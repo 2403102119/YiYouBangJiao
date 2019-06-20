@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_release"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_Release">
+
+    <include layout="@layout/include_top" />
+
+    <com.tangchaoke.yiyoubangjiao.view.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_grade_subject_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x14"
+                android:layout_marginTop="@dimen/y7">
+
+                <TextView
+                    android:id="@+id/tv_release_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="教育类·初三·数学"
+                    android:textColor="@color/color4d71a6"
+                    android:textSize="@dimen/x16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y7"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y63"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_marginRight="@dimen/x14"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="简单描述你遇到的问题"
+                    android:maxLength="200"
+                    android:padding="@dimen/x3"
+                    android:textColor="@color/color7f7f7f"
+                    android:textSize="@dimen/x16" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_suggestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/x14"
+                        android:maxLength="200"
+                        android:text="200字以内"
+                        android:textColor="@color/color7f7f7f"
+                        android:textSize="@dimen/x12" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/y7"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_marginTop="@dimen/y7">
+
+                    <LinearLayout
+                        android:id="@+id/ll_release_question"
+                        android:layout_width="@dimen/x89"
+                        android:layout_height="@dimen/y63"
+                        android:background="@color/colorF5F9FA"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_release_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_release_plus" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_delete"
+                        android:layout_width="@dimen/x18"
+                        android:layout_height="@dimen/y13"
+                        android:layout_alignRight="@id/ll_release_question"
+                        android:src="@drawable/ic_delete_tp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.tangchaoke.yiyoubangjiao.view.ObservableScrollView>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\HDL\\YiYouBangJiao\\lib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\recyclerview-v7-23.3.0.aar\\3f740cee64d218433667031b6cc72afe\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "327,402,478,550",
+                        "endColumns": "74,75,71,65",
+                        "endOffsets": "397,473,545,611"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "539,614,690,762",
+                        "endColumns": "74,75,71,65",
+                        "endOffsets": "609,685,757,823"
+                    }
+                }
+            ]
+        }
+    ]
+}

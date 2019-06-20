@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_Balance">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_balance_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y125"
+        android:layout_below="@id/include_top"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y7"
+                android:text="我的余额(元)"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/x12" />
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y7"
+                android:text="00.00"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x25" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的积分"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/x12" />
+
+                <ImageView
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:src="@drawable/ic_doubt" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y7"
+                android:text="0"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x25" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y38"
+        android:layout_below="@id/ll_balance_top"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/y79"
+        android:background="@drawable/select_blue_gradient_fillet_10"
+        android:gravity="center"
+        android:text="提现"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+    <Button
+        android:id="@+id/but_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y38"
+        android:layout_below="@id/but_withdraw"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginTop="@dimen/y3"
+        android:background="@drawable/select_blue_gradient_fillet10_line"
+        android:gravity="center"
+        android:text="交易明细"
+        android:textColor="@color/color266B85"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

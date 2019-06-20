@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x27"
+        android:layout_marginRight="@dimen/x27"
+        android:background="@drawable/shape_white_fillet_5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y15"
+            android:gravity="center_horizontal"
+            android:text="联系客服"
+            android:textColor="@color/color000000"
+            android:textSize="@dimen/x16" />
+
+        <TextView
+            android:id="@+id/dialog_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y8"
+            android:gravity="center_horizontal"
+            android:text="18237727931"
+            android:textColor="@color/color000000"
+            android:textSize="@dimen/x16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/y13"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_but_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="取消"
+                android:textColor="@color/color007AFF"
+                android:textSize="@dimen/x16" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorEBEBF1" />
+
+            <Button
+                android:id="@+id/dialog_but_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="呼叫"
+                android:textColor="@color/color007AFF"
+                android:textSize="@dimen/x16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

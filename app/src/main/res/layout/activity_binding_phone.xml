@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_picture"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_RecoverPassword">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top_individual" />
+
+    <TextView
+        android:id="@+id/tv_binding_phone_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top"
+        android:layout_marginTop="@dimen/y32"
+        android:gravity="center"
+        android:text="绑定手机"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x24" />
+
+    <FrameLayout
+        android:id="@+id/fl_binding_phone_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_binding_phone_top"
+        android:layout_marginTop="@dimen/y36">
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginRight="@dimen/x27"
+            android:background="@null"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/x13" />
+
+        <TextView
+            android:id="@+id/tv_send_code"
+            android:layout_width="@dimen/x72"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/shape_white_fillet_5"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="@dimen/y3"
+            android:text="发送验证码"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/x10" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fl_binding_phone_phone"
+        android:layout_marginLeft="@dimen/x27"
+        android:layout_marginRight="@dimen/x27"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/edit_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line1"
+        android:layout_marginLeft="@dimen/x27"
+        android:layout_marginRight="@dimen/x27"
+        android:layout_marginTop="@dimen/y16"
+        android:background="@null"
+        android:hint="请输入验证码"
+        android:inputType="number"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="@dimen/x13" />
+
+    <View
+        android:id="@+id/view_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/edit_code"
+        android:layout_marginLeft="@dimen/x27"
+        android:layout_marginRight="@dimen/x27"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/but_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y29"
+        android:layout_below="@id/view_line2"
+        android:layout_marginLeft="@dimen/x27"
+        android:layout_marginRight="@dimen/x27"
+        android:layout_marginTop="@dimen/y16"
+        android:background="@drawable/select_blue_gradient_fillet_10"
+        android:text="确 认"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

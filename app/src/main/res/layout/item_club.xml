@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_onclick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/y7"
+    android:layout_marginLeft="@dimen/x18"
+    android:layout_marginRight="@dimen/x18"
+    android:layout_marginTop="@dimen/y7"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_club_logo"
+        android:layout_width="@dimen/x67"
+        android:layout_height="@dimen/y47"
+        android:background="@color/colorF5F9FA" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x7"
+        android:layout_marginTop="@dimen/y2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_club_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="东方艺术围棋道场"
+            android:textColor="@color/color000000"
+            android:textSize="@dimen/x18" />
+
+        <TextView
+            android:id="@+id/tv_club_city_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y4"
+            android:text="天津 西青区"
+            android:textColor="@color/color7f7f7f"
+            android:textSize="@dimen/x15" />
+
+        <TextView
+            android:id="@+id/tv_briefIntroduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="东方艺术围棋道场具有专业的教学队"
+            android:textColor="@color/color7f7f7f"
+            android:textSize="@dimen/x15" />
+
+    </LinearLayout>
+
+</LinearLayout>

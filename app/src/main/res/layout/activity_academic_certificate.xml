@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_academic_certificate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_AcademicCertificate">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_academic_certificate_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y7"
+            android:layout_marginTop="@dimen/y7"
+            android:text="成人学历认证是为了保证用户权益，以下信息仅用于审核，我们将严格保密"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/x9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y7"
+                android:layout_marginTop="@dimen/y10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x45"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:text="毕业院校"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x11" />
+
+                <EditText
+                    android:id="@+id/edit_school_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y22"
+                    android:layout_marginLeft="@dimen/x26"
+                    android:layout_marginRight="@dimen/x14"
+                    android:background="@color/colorF6F9FA"
+                    android:hint="请输入毕业院校(必填项)"
+                    android:padding="@dimen/y5"
+                    android:textColor="@color/color666666"
+                    android:textSize="@dimen/x11" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x45"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:text="学历"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x11" />
+
+                <FrameLayout
+                    android:id="@+id/fl_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x26"
+                    android:layout_marginRight="@dimen/x14">
+
+                    <TextView
+                        android:id="@+id/tv_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y22"
+                        android:background="@color/colorF6F9FA"
+                        android:hint="请选择学历"
+                        android:padding="@dimen/y5"
+                        android:textColor="@color/color666666"
+                        android:textSize="@dimen/x11" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x17"
+                        android:layout_height="@dimen/y12"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="@dimen/x4"
+                        android:src="@drawable/ic_downward_arrow" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y7"
+                android:layout_marginTop="@dimen/y14"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/y57"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:text="毕业证(选填项)"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x11" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x26"
+                        android:layout_marginRight="@dimen/x14"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_diploma"
+                                android:layout_width="@dimen/x80"
+                                android:layout_height="@dimen/y56"
+                                android:background="@color/colorF5F9FA"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_diploma"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_release_plus" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/y4"
+                                android:text="毕业证照片"
+                                android:textColor="@color/color999999"
+                                android:textSize="@dimen/x10" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginTop="@dimen/y10"
+                        android:text="·请保持图片清晰，四角完整"
+                        android:textColor="@color/color666666"
+                        android:textSize="@dimen/x8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginTop="@dimen/y3"
+                        android:text="·仅支持jpg、png、jpeg格式，图片大小不超过2M"
+                        android:textColor="@color/color666666"
+                        android:textSize="@dimen/x8" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_upload"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y38"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y49"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:background="@drawable/select_blue_gradient_fillet_10"
+        android:text="上 传"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

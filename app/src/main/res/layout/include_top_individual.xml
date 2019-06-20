@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y34"
+        android:layout_marginTop="@dimen/y14"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="@dimen/x44"
+            android:layout_height="@dimen/y18"
+            android:layout_marginLeft="@dimen/x14"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x14"
+                android:layout_height="@dimen/y10"
+                android:src="@drawable/ic_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/color000000"
+            android:textSize="@dimen/x18"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x14"
+            android:text="快捷登录"
+            android:textColor="@color/colorFEFEFE"
+            android:textSize="@dimen/x14"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

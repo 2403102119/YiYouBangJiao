@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_OrderComment">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_order_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="@dimen/y8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打分"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x14" />
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x4"
+                hedgehog:clickable="true"
+                hedgehog:starCount="5"
+                hedgehog:starEmpty="@drawable/ic_un_xing"
+                hedgehog:starFill="@drawable/ic_xing"
+                hedgehog:starImageHeight="@dimen/y13"
+                hedgehog:starImagePadding="@dimen/x4"
+                hedgehog:starImageWidth="@dimen/x19" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y49"
+            android:layout_marginTop="@dimen/y4"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="发表一下你对该商品的看法"
+            android:maxLength="200"
+            android:padding="@dimen/x3"
+            android:textColor="@color/color7f7f7f"
+            android:textSize="@dimen/x14" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_publish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y38"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y49"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:background="@drawable/select_blue_gradient_fillet_10"
+        android:text="发 表"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

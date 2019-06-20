@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF6F9FA"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_Withdraw">
+
+    <include layout="@layout/include_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_zfb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x42"
+                android:layout_height="@dimen/y30"
+                android:background="@drawable/ic_alipay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y5"
+                android:text="支付宝"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x10" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@color/colorF6F9FA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x44"
+            android:layout_marginTop="@dimen/y20"
+            android:text="提现金额"
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/x12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text="¥"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+            <EditText
+                android:id="@+id/edit_money"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y30"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x50"
+                android:background="@color/colorF6F9FA"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/x6"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/select_light_blue_square"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+</LinearLayout>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_mine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.tangchaoke.yiyoubangjiao.fragment.Fragment_Mine">
+
+    <com.tangchaoke.yiyoubangjiao.view.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y131"
+                    android:background="@drawable/ic_me_background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y14"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y32"
+                        android:gravity="right">
+
+                        <FrameLayout
+                            android:layout_width="@dimen/x23"
+                            android:layout_height="@dimen/y13"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/x17">
+
+                            <ImageView
+                                android:id="@+id/img_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_message_top" />
+
+                            <ImageView
+                                android:id="@+id/img_message_identification"
+                                android:layout_width="@dimen/x5"
+                                android:layout_height="@dimen/y4"
+                                android:layout_gravity="right"
+                                android:src="@drawable/shape_red_circle" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y62">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_user_head"
+                            android:layout_width="@dimen/x67"
+                            android:layout_height="@dimen/y47"
+                            android:layout_marginLeft="@dimen/x23"
+                            android:background="@drawable/ic_user" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/x11"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+                            <com.hedgehog.ratingbar.RatingBar
+                                android:id="@+id/rating_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                hedgehog:clickable="false"
+                                hedgehog:halfstart="false"
+                                hedgehog:starCount="5"
+                                hedgehog:starEmpty="@drawable/ic_un_xing"
+                                hedgehog:starFill="@drawable/ic_xing"
+                                hedgehog:starImageHeight="@dimen/y10"
+                                hedgehog:starImagePadding="@dimen/x4"
+                                hedgehog:starImageWidth="@dimen/x15"></com.hedgehog.ratingbar.RatingBar>
+
+                            <TextView
+                                android:id="@+id/tv_nick_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/y5"
+                                android:text="昵称"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x15" />
+
+                            <TextView
+                                android:id="@+id/tv_bind_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="手机号"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/img_open_answer"
+                            android:layout_width="@dimen/x66"
+                            android:layout_height="@dimen/y17"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="@dimen/y2"
+                            android:layout_marginRight="@dimen/x9"
+                            android:background="@drawable/kaitongdati"
+                            android:text="开始答题"
+                            android:textColor="@color/color4d71a6"
+                            android:textSize="@dimen/x12" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y20"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_mine_unanswered"
+                            android:layout_width="@dimen/x45"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="@dimen/x24"
+                                    android:layout_height="@dimen/y17"
+                                    android:layout_marginLeft="@dimen/x9"
+                                    android:layout_marginRight="@dimen/x9"
+                                    android:layout_marginTop="@dimen/y6"
+                                    android:src="@drawable/ic_answered" />
+
+                                <TextView
+                                    android:id="@+id/tv_unanswered_quantity"
+                                    android:layout_width="@dimen/x18"
+                                    android:layout_height="@dimen/y13"
+                                    android:layout_gravity="right"
+                                    android:background="@drawable/shape_red_circle"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/colorPrimary"
+                                    android:visibility="invisible" />
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x3"
+                                android:text="未解答"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_mine_to_be_adopted"
+                            android:layout_width="@dimen/x45"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="@dimen/x24"
+                                    android:layout_height="@dimen/y17"
+                                    android:layout_marginLeft="@dimen/x9"
+                                    android:layout_marginRight="@dimen/x9"
+                                    android:layout_marginTop="@dimen/y6"
+                                    android:src="@drawable/ic_to_be_adopted" />
+
+                                <TextView
+                                    android:id="@+id/tv_to_be_adopted_quantity"
+                                    android:layout_width="@dimen/x18"
+                                    android:layout_height="@dimen/y13"
+                                    android:layout_gravity="right"
+                                    android:background="@drawable/shape_red_circle"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/colorPrimary"
+                                    android:visibility="invisible" />
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x3"
+                                android:gravity="center"
+                                android:text="待采纳"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_mine_answered"
+                            android:layout_width="@dimen/x45"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="@dimen/x24"
+                                    android:layout_height="@dimen/y17"
+                                    android:layout_marginLeft="@dimen/x9"
+                                    android:layout_marginRight="@dimen/x9"
+                                    android:layout_marginTop="@dimen/y6"
+                                    android:src="@drawable/ic_unanswered" />
+
+                                <TextView
+                                    android:id="@+id/tv_answered_quantity"
+                                    android:layout_width="@dimen/x18"
+                                    android:layout_height="@dimen/y13"
+                                    android:layout_gravity="right"
+                                    android:background="@drawable/shape_red_circle"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/colorPrimary"
+                                    android:visibility="invisible" />
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x3"
+                                android:text="已解答"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y22"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_mine_orders"
+                            android:layout_width="@dimen/x45"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/x24"
+                                android:layout_height="@dimen/y17"
+                                android:src="@drawable/ic_orders" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x3"
+                                android:text="订单"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_mine_certified"
+                            android:layout_width="@dimen/x45"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/x24"
+                                android:layout_height="@dimen/y17"
+                                android:src="@drawable/ic_certified" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x3"
+                                android:text="认证"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_balance"
+                            android:layout_width="@dimen/x45"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/x24"
+                                android:layout_height="@dimen/y17"
+                                android:src="@drawable/ic_balance" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x3"
+                                android:text="我的账户"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y22"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_contact_us"
+                            android:layout_width="@dimen/x45"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/x24"
+                                android:layout_height="@dimen/y17"
+                                android:src="@drawable/ic_contact_us" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x3"
+                                android:text="联系客服"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_mine_about_us"
+                            android:layout_width="@dimen/x45"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/x24"
+                                android:layout_height="@dimen/y17"
+                                android:src="@drawable/ic_share" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x3"
+                                android:text="分享"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_mine_settings"
+                            android:layout_width="@dimen/x45"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/x24"
+                                android:layout_height="@dimen/y17"
+                                android:src="@drawable/ic_settings" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x3"
+                                android:text="设置"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x11" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </com.tangchaoke.yiyoubangjiao.view.ObservableScrollView>
+
+</LinearLayout>

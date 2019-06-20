@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_ClubInfo">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <com.tangchaoke.yiyoubangjiao.view.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_top"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/xbanner_club_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y108"
+                android:background="@drawable/ic_banner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y35"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="@dimen/y10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_club_info_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="唐朝客俱乐部"
+                        android:textColor="@color/color000000"
+                        android:textSize="@dimen/x18" />
+
+                    <ImageView
+                        android:id="@+id/img_club_info_star"
+                        android:layout_width="@dimen/x19"
+                        android:layout_height="@dimen/y13"
+                        android:layout_marginLeft="@dimen/x4"></ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x14"
+                    android:text="营业时间"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x15" />
+
+                <TextView
+                    android:id="@+id/tv_club_info_businessHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:text="周一至周五 9:00-18:00"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x14"
+                    android:text="棋类机构地址"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x15" />
+
+                <LinearLayout
+                    android:id="@+id/ll_club_info_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_club_info_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_weight="1"
+                        android:text="天津市河西区国际贸易中心B-2109"
+                        android:textColor="@color/color333333"
+                        android:textSize="@dimen/x13" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x12"
+                        android:layout_height="@dimen/y8"
+                        android:layout_marginRight="@dimen/x4"
+                        android:src="@drawable/ic_item_right_arrow" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x14"
+                    android:text="简介"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x15" />
+
+                <TextView
+                    android:id="@+id/tv_club_info_briefIntroduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:text="文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x13" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.tangchaoke.yiyoubangjiao.view.ObservableScrollView>
+
+    <Button
+        android:id="@+id/but_advisory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y32"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color266B85"
+        android:text="填写咨询报名信息"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

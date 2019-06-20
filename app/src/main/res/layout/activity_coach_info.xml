@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_CoachInfo">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <com.tangchaoke.yiyoubangjiao.view.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_find_teach_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <include layout="@layout/item_coach" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_find_teach_top"
+                android:layout_marginBottom="@dimen/y32"
+                android:layout_marginTop="@dimen/y5"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="@dimen/y10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成功案例"
+                    android:textColor="@color/color000000"
+                    android:textSize="@dimen/x18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_successCase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="任教的每一位学员都拿到了XXX证书，部分拿到了XX级证书"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y13"
+                    android:text="毕业院校"
+                    android:textColor="@color/color000000"
+                    android:textSize="@dimen/x18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_schoolName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="天津师范大学"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y13"
+                    android:text="教学范围"
+                    android:textColor="@color/color000000"
+                    android:textSize="@dimen/x18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_teachingRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="围棋象棋，XX等级证书考试"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y13"
+                    android:text="教学经历"
+                    android:textColor="@color/color000000"
+                    android:textSize="@dimen/x18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_teachingExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="任教的每一位学员都拿到了XXX证书，部分拿到了XX级证书"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x15" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.tangchaoke.yiyoubangjiao.view.ObservableScrollView>
+
+    <Button
+        android:id="@+id/but_reserva"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y32"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_blue_gradient"
+        android:text="立即预约"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

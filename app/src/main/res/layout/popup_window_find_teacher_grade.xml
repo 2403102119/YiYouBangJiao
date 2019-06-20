@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_all"
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/y13"
+                android:layout_marginBottom="@dimen/y3"
+                android:layout_marginLeft="@dimen/x9"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@drawable/shape_light_gray_fillet_5"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全部"
+                    android:textColor="@color/color999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x14"
+                android:text="高中"
+                android:textColor="@color/color666666"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/y13"
+                android:layout_marginLeft="@dimen/x14"
+                android:background="@color/color999999" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_find_teacher_grade_high_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y29"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x14"
+                android:text="初中"
+                android:textColor="@color/color666666"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/y13"
+                android:layout_marginLeft="@dimen/x14"
+                android:background="@color/color999999" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_find_teacher_grade_junior_high_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEBEBF1" />
+
+        <LinearLayout
+            android:id="@+id/ll_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x14"
+                android:text="小学"
+                android:textColor="@color/color666666"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/y13"
+                android:layout_marginLeft="@dimen/x14"
+                android:background="@color/color999999" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_find_teacher_grade_primary_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y7"
+                android:layout_marginTop="@dimen/y7"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_PushRange">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_top"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x22"
+                android:layout_marginRight="@dimen/x22"
+                android:layout_marginTop="@dimen/y5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="推送题目范围（可多选）"
+                    android:textColor="@color/color666666"
+                    android:textSize="@dimen/x13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="小学（可多选）"
+                    android:textColor="@color/color666666"
+                    android:textSize="@dimen/x12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y11">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_primary_school_grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y11">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_primary_school_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="初中（可多选）"
+                    android:textColor="@color/color666666"
+                    android:textSize="@dimen/x12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y11">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_junior_high_school_grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_junior_high_school_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y6"
+                    android:text="高中（可多选）"
+                    android:textColor="@color/color666666"
+                    android:textSize="@dimen/x12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y11">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_high_school_grade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_high_school_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/but_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y38"
+                    android:layout_marginBottom="@dimen/y49"
+                    android:layout_marginTop="@dimen/y13"
+                    android:background="@drawable/select_blue_gradient_fillet_10"
+                    android:text="提 交"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/x15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

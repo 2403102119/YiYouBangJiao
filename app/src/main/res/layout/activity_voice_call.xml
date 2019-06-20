@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color252C39"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_pr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x18"
+            android:layout_marginRight="@dimen/x18"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/y3"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_call_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x11"
+                    android:paddingRight="@dimen/x11"
+                    android:textColor="@color/voip_interface_text_color"
+                    android:textSize="22sp"
+                    android:visibility="visible" />
+
+                <com.tangchaoke.yiyoubangjiao.yuyin.MyChronometer
+                    android:id="@+id/chronometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chronometer"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_is_p2p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tv_calling_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/y16"
+                    android:textColor="@color/voip_interface_text_color"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/swing_card"
+                    android:layout_width="@dimen/x54"
+                    android:layout_height="@dimen/y38"
+                    android:layout_marginTop="@dimen/y7"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y7"
+                    android:text="张三"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_voice_control"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_mute"
+                            android:layout_width="@dimen/x53"
+                            android:layout_height="@dimen/y37"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_mute_normal" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/y2"
+                            android:gravity="center"
+                            android:text="@string/mute"
+                            android:textColor="#666167" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_handsfree"
+                            android:layout_width="@dimen/x53"
+                            android:layout_height="@dimen/y37"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_speaker_normal" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/y2"
+                            android:gravity="center"
+                            android:text="@string/hands_free"
+                            android:textColor="#666167" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y13">
+
+                    <Button
+                        android:id="@+id/btn_hangup_call"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/y38"
+                        android:background="@drawable/call_hangup_bg"
+                        android:gravity="center"
+                        android:text="@string/hang_up"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_coming_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btn_refuse_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/y38"
+                            android:layout_weight="1"
+                            android:background="@drawable/call_hangup_bg"
+                            android:gravity="center"
+                            android:text="@string/hang_up"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/btn_answer_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/y38"
+                            android:layout_marginLeft="@dimen/x27"
+                            android:layout_weight="1"
+                            android:background="@drawable/call_answer_bg"
+                            android:gravity="center"
+                            android:text="@string/answer"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/but_problem"
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/y32"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x9"
+            android:layout_marginTop="@dimen/y32"
+            android:background="@drawable/shape_light_blue_circle"
+            android:gravity="center"
+            android:text="查看问题"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_Chat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y32"
+        android:background="@drawable/select_blue_gradient"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="@dimen/x44"
+            android:layout_height="@dimen/y18"
+            android:layout_marginLeft="@dimen/x14"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x14"
+                android:layout_height="@dimen/y10"
+                android:src="@drawable/ic_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/x18" />
+
+        <LinearLayout
+            android:id="@+id/ll_adoption"
+            android:layout_width="@dimen/x55"
+            android:layout_height="@dimen/y16"
+            android:layout_marginRight="@dimen/x14"
+            android:background="@drawable/shape_light_blue_fillet_square_2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_adoption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束通话"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/x12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_complete"
+            android:layout_width="@dimen/x55"
+            android:layout_height="@dimen/y16"
+            android:layout_marginRight="@dimen/x14"
+            android:background="@drawable/shape_light_blue_fillet_square"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="解答完毕"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/x12" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorEBEBF1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_click_on"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/but_problem"
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/y32"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x13"
+            android:layout_marginTop="@dimen/y6"
+            android:background="@drawable/shape_light_blue_circle"
+            android:text="查看\n问题"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_pr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

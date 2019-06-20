@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_onclick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x22"
+        android:layout_marginRight="@dimen/x22"
+        android:layout_marginTop="@dimen/y6"
+        android:layout_marginBottom="@dimen/y6"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_userInfoHead"
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/y22"
+            android:background="@drawable/ic_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_userInfoNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y3"
+                android:text="137****0299"
+                android:textColor="@color/color333333"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hedgehog.ratingbar.RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    hedgehog:clickable="false"
+                    hedgehog:halfstart="false"
+                    hedgehog:starCount="5"
+                    hedgehog:starEmpty="@drawable/ic_un_xing"
+                    hedgehog:starFill="@drawable/ic_xing"
+                    hedgehog:starImageHeight="@dimen/y10"
+                    hedgehog:starImagePadding="@dimen/x4"
+                    hedgehog:starImageWidth="@dimen/x15"></com.hedgehog.ratingbar.RatingBar>
+
+                <TextView
+                    android:id="@+id/tv_commentTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2017-04-18"
+                    android:textColor="@color/color999999"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_commentContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y6"
+                android:text="质量非常好，做工非常精细，用料非常好，值！这个价钱超级值，而且安装方便，包装没的说"
+                android:textColor="@color/color333333"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

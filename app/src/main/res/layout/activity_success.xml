@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_Success">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <ImageView
+        android:id="@+id/img_success"
+        android:layout_width="@dimen/x59"
+        android:layout_height="@dimen/y41"
+        android:layout_below="@id/include_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y57"
+        android:src="@drawable/ic_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_success"
+        android:layout_marginLeft="@dimen/x54"
+        android:layout_marginRight="@dimen/x54"
+        android:layout_marginTop="@dimen/y22"
+        android:gravity="center"
+        android:text="支付成功，请耐心等待，我们将尽快为您发货"
+        android:textSize="@dimen/x12" />
+
+</RelativeLayout>

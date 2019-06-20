@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_SelectCertified">
+
+    <include layout="@layout/include_top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y27"
+        android:text="请选择认证类型，根据提示进行认证"
+        android:textColor="@color/color333333"
+        android:textSize="@dimen/x15" />
+
+    <LinearLayout
+        android:id="@+id/ll_actor_certified"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y28"
+        android:layout_marginLeft="@dimen/x61"
+        android:layout_marginRight="@dimen/x61"
+        android:layout_marginTop="@dimen/y22"
+        android:background="@drawable/shape_light_blue_fillet_20"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/x27"
+            android:layout_height="@dimen/y19"
+            android:layout_marginLeft="@dimen/x45"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/x11"
+                android:layout_height="@dimen/y19"
+                android:src="@drawable/ic_answerer" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="答题者认证"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/x16" />
+
+    </LinearLayout>
+
+</LinearLayout>

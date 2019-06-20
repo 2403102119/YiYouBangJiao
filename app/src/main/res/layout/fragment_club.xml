@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    tools:context="com.tangchaoke.yiyoubangjiao.fragment.Fragment_Club">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/top_search" />
+
+    <LinearLayout
+        android:id="@+id/ll_top_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_below="@id/include_top"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_province"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在省份"
+                android:textColor="@color/color7f7f7f"
+                android:textSize="@dimen/x13" />
+
+            <ImageView
+                android:id="@+id/img_province"
+                android:layout_width="@dimen/x5"
+                android:layout_height="@dimen/y3"
+                android:src="@drawable/ic_clup_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在城市"
+                android:textColor="@color/color7f7f7f"
+                android:textSize="@dimen/x13" />
+
+            <ImageView
+                android:id="@+id/img_city"
+                android:layout_width="@dimen/x5"
+                android:layout_height="@dimen/y3"
+                android:src="@drawable/ic_clup_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_county"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_county"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在区"
+                android:textColor="@color/color7f7f7f"
+                android:textSize="@dimen/x13" />
+
+            <ImageView
+                android:id="@+id/img_county"
+                android:layout_width="@dimen/x5"
+                android:layout_height="@dimen/y3"
+                android:src="@drawable/ic_clup_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_club"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_top_select"
+        android:background="@color/colorEBEBF1" />
+
+    <com.tangchaoke.yiyoubangjiao.view.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_club">
+
+        <include layout="@layout/pullto_refresh_head" />
+
+        <com.tangchaoke.yiyoubangjiao.view.ObservableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_club"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/y6"
+                    android:background="@color/colorPrimary"></android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:id="@+id/ll_no_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/y13"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y13"
+                        android:background="@drawable/ic_null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y13"
+                        android:text="未探测到相关数据"
+                        android:textColor="@color/color999999"
+                        android:textSize="@dimen/x15" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.tangchaoke.yiyoubangjiao.view.ObservableScrollView>
+
+        <include layout="@layout/pullto_load_more" />
+
+    </com.tangchaoke.yiyoubangjiao.view.PullToRefreshLayout>
+
+</RelativeLayout>

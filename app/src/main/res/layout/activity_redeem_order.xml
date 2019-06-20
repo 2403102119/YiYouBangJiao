@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_RedeemOrder">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y55"
+        android:layout_below="@id/include_top"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_address_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/x19"
+                android:layout_height="@dimen/y13"
+                android:src="@drawable/ic_add_address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x4"
+                android:text="请添加收货地址"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_address_have"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/y10">
+
+            <TextView
+                android:id="@+id/tv_address_name_or_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y5"
+                android:text="杨洋    13612082091"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x16" />
+
+            <TextView
+                android:id="@+id/tv_detailedAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晶采上品 1号门2107"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_redeem_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_address"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="@dimen/x18">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="@dimen/x94"
+                android:layout_height="@dimen/y66"
+                android:background="@color/colorEBEBF1"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y7"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="国际详细 木质 棋盘 旗子国际详细 木质 棋盘 旗子国际详细"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/x15" />
+
+                <TextView
+                    android:id="@+id/tv_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y7"
+                    android:text="木质"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/x14" />
+
+                <TextView
+                    android:id="@+id/tv_integral_or_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y7"
+                    android:text="3,599积分/3,599元"
+                    android:textColor="@color/colore21c5f"
+                    android:textSize="@dimen/x15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/y4"
+            android:background="@color/colorEBEBF1" />
+
+        <EditText
+            android:id="@+id/edit_leaving_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y32"
+            android:layout_marginTop="@dimen/y4"
+            android:background="@drawable/shape_light_gray2_fillet_5"
+            android:hint="如果您有其他需求，请留言"
+            android:padding="@dimen/y4"
+            android:textColor="@color/color999999"
+            android:textSize="@dimen/x14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/y7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计："
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/x15" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4590积分"
+                android:textColor="@color/colore21c5f"
+                android:textSize="@dimen/x15" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_redeem_order_info"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="@dimen/x18">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="需支付"
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/x15" />
+
+        <TextView
+            android:id="@+id/tv_need_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4590积分"
+            android:textColor="@color/colore21c5f"
+            android:textSize="@dimen/x15" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_redeem_order_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y32"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_blue_gradient"
+        android:text="确认并提交"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

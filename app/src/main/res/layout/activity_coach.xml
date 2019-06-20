@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_Coach">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_coach_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_below="@id/include_top"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_province"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="省"
+                android:textColor="@color/color7f7f7f"
+                android:textSize="@dimen/x13" />
+
+            <ImageView
+                android:id="@+id/img_province"
+                android:layout_width="@dimen/x5"
+                android:layout_height="@dimen/y3"
+                android:src="@drawable/ic_clup_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="市"
+                android:textColor="@color/color7f7f7f"
+                android:textSize="@dimen/x13" />
+
+            <ImageView
+                android:id="@+id/img_city"
+                android:layout_width="@dimen/x5"
+                android:layout_height="@dimen/y3"
+                android:src="@drawable/ic_clup_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_county"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_county"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区"
+                android:textColor="@color/color7f7f7f"
+                android:textSize="@dimen/x13" />
+
+            <ImageView
+                android:id="@+id/img_county"
+                android:layout_width="@dimen/x5"
+                android:layout_height="@dimen/y3"
+                android:src="@drawable/ic_clup_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_chess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x5"
+                android:text="棋类"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/x13" />
+
+            <ImageView
+                android:id="@+id/img_chess"
+                android:layout_width="@dimen/x5"
+                android:layout_height="@dimen/y3"
+                android:src="@drawable/ic_clup_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_coach_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_coach_top"
+        android:background="@color/colorEBEBF1" />
+
+    <LinearLayout
+        android:id="@+id/ll_grandmaster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_coach_line">
+
+        <include layout="@layout/include_pull_recycler" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_my_club_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_my_club_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

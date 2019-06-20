@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEBEBF1"
+    android:orientation="vertical"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_Certified">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_top">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/y7"
+                    android:layout_marginTop="@dimen/y7"
+                    android:text="信息认证是为了保证用户权益，以下信息仅用于审核，我们将严格保密"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/x9" />
+
+                <TextView
+                    android:id="@+id/tv_prompt_pick_one_of_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/y7"
+                    android:text="成人学历认证 和 在校学生认证 任选其一进行认证"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/x12" />
+
+                <FrameLayout
+                    android:id="@+id/fl_academic_certificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y86"
+                        android:layout_marginLeft="@dimen/x7"
+                        android:layout_marginRight="@dimen/x7"
+                        android:layout_marginTop="@dimen/y4"
+                        android:background="@drawable/ic_card"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/y29"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/x20"
+                                android:layout_weight="1"
+                                android:text="成人学历认证"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x15" />
+
+                            <ImageView
+                                android:layout_width="@dimen/x12"
+                                android:layout_height="@dimen/y8"
+                                android:layout_marginRight="@dimen/x14"
+                                android:src="@drawable/ic_item_right_arrow" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:layout_marginRight="@dimen/x22"
+                            android:background="@color/colorF6F9FA" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:layout_marginTop="@dimen/y9"
+                            android:src="@drawable/ic_education_background" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_academic_certificate_verified"
+                        android:layout_width="@dimen/x112"
+                        android:layout_height="@dimen/y59"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/x14"
+                        android:layout_marginTop="@dimen/y36"
+                        android:src="@drawable/ic_verified"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_academic_certificate_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y80"
+                        android:layout_marginBottom="@dimen/y7"
+                        android:layout_marginLeft="@dimen/y9"
+                        android:layout_marginRight="@dimen/y9"
+                        android:layout_marginTop="@dimen/y4"
+                        android:alpha="0.3"
+                        android:background="@drawable/shape_transparent_gray_fillet_5"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_student_id_certification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y86"
+                        android:layout_marginLeft="@dimen/x7"
+                        android:layout_marginRight="@dimen/x7"
+                        android:layout_marginTop="@dimen/y4"
+                        android:background="@drawable/ic_card"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/y29"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/x20"
+                                android:layout_weight="1"
+                                android:text="在校学生认证"
+                                android:textColor="@color/color333333"
+                                android:textSize="@dimen/x15" />
+
+                            <ImageView
+                                android:layout_width="@dimen/x12"
+                                android:layout_height="@dimen/y8"
+                                android:layout_marginRight="@dimen/x14"
+                                android:src="@drawable/ic_item_right_arrow" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:layout_marginRight="@dimen/x22"
+                            android:background="@color/colorF6F9FA" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:layout_marginTop="@dimen/y9"
+                            android:src="@drawable/ic_education_background" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_student_id_certification"
+                        android:layout_width="@dimen/x112"
+                        android:layout_height="@dimen/y59"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/x14"
+                        android:layout_marginTop="@dimen/y36"
+                        android:src="@drawable/ic_verified"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_student_id_certification_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y80"
+                        android:layout_marginBottom="@dimen/y7"
+                        android:layout_marginLeft="@dimen/y9"
+                        android:layout_marginRight="@dimen/y9"
+                        android:layout_marginTop="@dimen/y4"
+                        android:alpha="0.3"
+                        android:background="@drawable/shape_transparent_gray_fillet_5"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/but_open"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y38"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/y30"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:background="@drawable/select_blue_gradient_fillet_10"
+            android:text="申请开通"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/x15" />
+
+    </FrameLayout>
+
+</RelativeLayout>

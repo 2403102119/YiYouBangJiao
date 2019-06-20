@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_onclick"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y25"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_club_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天津"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/x14" />
+
+</LinearLayout>

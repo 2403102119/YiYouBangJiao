@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.tangchaoke.yiyoubangjiao.activity.Activity_MyClub">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_top" />
+
+    <RelativeLayout
+        android:id="@+id/rl_my_club_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top">
+
+        <ImageView
+            android:id="@+id/img_interactive_nswer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y92"
+            android:layout_marginLeft="@dimen/x3"
+            android:layout_marginRight="@dimen/x3"
+            android:layout_marginTop="@dimen/y4"
+            android:background="@drawable/ic_my_club_interactive_nswer" />
+
+        <ImageView
+            android:id="@+id/img_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y76"
+            android:layout_below="@id/img_interactive_nswer"
+            android:layout_marginLeft="@dimen/x3"
+            android:layout_marginRight="@dimen/x3"
+            android:layout_marginTop="@dimen/y4"
+            android:background="@drawable/ic_my_club_teacher" />
+
+        <ImageView
+            android:id="@+id/img_news"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y76"
+            android:layout_below="@id/img_teacher"
+            android:layout_marginLeft="@dimen/x3"
+            android:layout_marginRight="@dimen/x3"
+            android:layout_marginTop="@dimen/y4"
+            android:background="@drawable/ic_my_club_news" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_null_club"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top"
+        android:layout_marginTop="@dimen/y60"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_null" />
+
+        <TextView
+            android:id="@+id/tv_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y10"
+            android:text="您还没有绑定任何棋类机构"
+            android:textColor="@color/color929292"
+            android:textSize="@dimen/x18" />
+
+        <Button
+            android:id="@+id/but_bind_immediately"
+            android:layout_width="@dimen/y80"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@drawable/select_blue_gradient_fillet_20"
+            android:text="立即绑定"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/x18" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_club_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/img_botton"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/color929292"
+        android:textSize="@dimen/x15" />
+
+    <ImageView
+        android:id="@+id/img_botton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y48"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_my_club_botton" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_onclick"
+    android:layout_width="@dimen/x46"
+    android:layout_height="@dimen/y13"
+    android:layout_marginBottom="@dimen/y3"
+    android:layout_marginLeft="@dimen/x9"
+    android:layout_marginTop="@dimen/y3"
+    android:background="@drawable/shape_light_gray_fillet_5"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_release_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一年级"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/x10" />
+
+</LinearLayout>
